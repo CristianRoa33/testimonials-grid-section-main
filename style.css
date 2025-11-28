@@ -40,7 +40,10 @@ main{
 article { 
     display: flex;
     flex-direction: column;
+    border-radius: 10px;
+    padding: 34px 34px 34px 34px;
 }
+
 
 header {
     display: flex;
@@ -49,8 +52,18 @@ header {
 
 .avatar {
     border-radius:50%;
-    width: 28px;
-    height: 28px;
+    width: 30px;
+    height: 30px;
+}
+
+.name {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.status {
+    font-size: 13px;
+    font-weight: 500;
 }
 
 .Clifford {
@@ -59,39 +72,108 @@ header {
     width: 305px;
     max-width: 540px;
     height: 450px;
-    padding: 34px 34px 34px 34px;
+    color: var(--Purple-50);
 }
+
 .Daniel {
     border: 2px solid var(--Purple-300);
+}
+
+.Clifford h1 {
+    font-size: 20px;
+    margin: 18px 0 21px 0;
+    font-weight: 600;
+}
+
+.Clifford p {
+    font-size: 13px;
+    font-weight: 500;
 }
 
 .Walters {
     grid-area: Walters;
     background-color: var(--Grey-500);
+    width: 305px;
+    height: 246px;
+    color: var(--Grey-200);
+}
+
+.Walters h1 {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 18px 0 21px 0;
+}
+
+.Walters p {
+    font-size: 13px;
+    font-weight: 500;
 }
 
 .Harmon {
     grid-area: Harmon;
     background-color: var(--White);
+    width: 305px;
+    height: 227px;
+    color: var(--Grey-500);
+}
+
+.Harmon h1 {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 18px 0 15px 0;
+}
+
+.Harmon p {
+    font-size: 13px;
+    font-weight: 500;
 }
 
 .Abrams {
     grid-area: Abrams;
     background-color: var(--Dark-blue);
+    width: 305px;
+    height: 414px;
+    color: var(--White);
+}
+
+
+.Abrams h1 {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 18px 0 10px 0;
+}
+
+.Abrams p {
+    font-size: 13px;
 }
 
 .Whittle {
     grid-area: Whittle;
     background-color: var(--White);
+    width: 305px;
+    height: 503px;
+    color: var(--Grey-400);
+}
+
+.Whittle h1 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 18px 0 21px 0;
+    color: var(--Grey-500);
+}
+
+.Whittle p {
+    font-size: 13px;
+    font-weight: 500;
 }
 
 
 
 
-footer .attribution {
+.attribution {
     font-size: 11px; text-align: center; 
 }
 
-footer .attribution a {
+.attribution a {
     color: hsl(228, 45%, 44%);
 }
