@@ -40,7 +40,7 @@ main{
 article { 
     display: flex;
     flex-direction: column;
-    border-radius: 10px;
+    border-radius: 8px;
     padding: 34px 34px 34px 34px;
 }
 
@@ -167,6 +167,53 @@ header {
     font-weight: 500;
 }
 
+/*-------1440px-------*/
+
+
+@media ( 1024px <= width <= 1440px  ) {
+    body {
+        height: 100dvh;
+    }
+    
+    main {
+        display: grid;
+        grid-template-columns: repeat(4 , 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 
+        "Clifford Clifford Walters Whittle"
+        "Harmon    Abrams  Abrams  Whittle";
+        margin: 229px 165px 50px 165px;
+    }
+
+    .Clifford {
+        grid-area: Clifford ;
+        width: 540px;
+        height: 288px;
+    }
+
+    .Walters {
+        grid-area: Walters;
+        width: 256px;
+        height: 288px;
+    }
+    .Harmon {
+        grid-area: Harmon ;
+        width: 255px;
+        height: 271px;
+    }
+
+    .Abrams {
+        grid-area: Abrams ;
+        width: 540px;
+        height: 271px;
+    }
+
+    .Whittle {
+        grid-area: Whittle;
+        width: 256px;
+        height: 590px;
+    }
+}
 
 
 
