@@ -57,21 +57,21 @@ header {
 }
 
 .name {
-    font-size: 15px;
-    font-weight: 600;
+    font-size: 0.9375rem;
+    font-weight: 500;
 }
 
 .status {
-    font-size: 13px;
-    font-weight: 500;
+    font-size: 0.8125rem;
+    font-weight: 400;
 }
 
 .Clifford {
     grid-area: Clifford;
     background-color: var(--Purple-500);
-    width: 305px;
-    max-width: 540px;
-    height: 450px;
+    width: 19.07rem;
+    max-width: 33.75rem;
+    height: 28.125rem;
     color: var(--Purple-50);
 }
 
@@ -80,28 +80,36 @@ header {
 }
 
 .Clifford h1 {
-    font-size: 20px;
-    margin: 18px 0 21px 0;
+    font-size: 1.25rem;
+    margin: 11px 0 21px 0;
     font-weight: 600;
 }
 
 .Clifford p {
-    font-size: 13px;
-    font-weight: 500;
+    font-size: 0.82rem;
 }
 
 .Walters {
     grid-area: Walters;
     background-color: var(--Grey-500);
-    width: 305px;
-    height: 246px;
+    width: 19.0625rem;
+    height: 15.375rem;
+    color: var(--Grey-200);
+}
+
+.Walters .name {
+    color: var(--Grey-100);
+}
+
+.Walters .status {
     color: var(--Grey-200);
 }
 
 .Walters h1 {
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 500;
-    margin: 18px 0 21px 0;
+    margin: 15px 0 21px 0;
+    color: var(--Grey-100);
 }
 
 .Walters p {
@@ -117,10 +125,12 @@ header {
     color: var(--Grey-500);
 }
 
+
+
 .Harmon h1 {
     font-size: 20px;
     font-weight: 500;
-    margin: 18px 0 15px 0;
+    margin: 15px 0 15px 0;
 }
 
 .Harmon p {
@@ -182,42 +192,51 @@ header {
 
     main {
         display: grid;
-        grid-template-columns: repeat(4 , 1fr);
+        grid-template-columns: repeat(4 ,minmax(20rem));
         grid-template-rows: repeat(2, 1fr);
         grid-template-areas: 
         "Clifford Clifford Walters Whittle"
         "Harmon    Abrams  Abrams  Whittle";
-        width: 1114px;
-        height: 583px;
+        width: 69.625rem;
+        height: 36.44rem;
     }
 
     .Clifford {
         grid-area: Clifford ;
-        width: 540px;
-        height: 288px;
+        width: 33.75rem;
+        height: 18rem;
+        background-image: url(images/bg-pattern-quotation.svg);
+        background-repeat: no-repeat ;
+        background-position: 87% 0%;
+       
     }
 
     .Walters {
         grid-area: Walters;
-        width: 256px;
-        height: 288px;
+        width: 16rem;
+        height: 18rem;
     }
     .Harmon {
-        grid-area: Harmon ;
-        width: 255px;
+        grid-area: Harmon;
+        width: 16rem;
         height: 271px;
     }
 
     .Abrams {
         grid-area: Abrams ;
-        width: 540px;
-        height: 271px;
+        width: 33.75rem;
+        height: 16.94rem;
     }
 
     .Whittle {
         grid-area: Whittle;
-        width: 256px;
-        height: 590px;
+        width: 16rem;
+        height: 36.875rem;
+    }
+
+    .Whittle p {
+        font-size: 13.5px;
+        font-weight: 500;
     }
 }
 
