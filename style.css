@@ -170,11 +170,16 @@ header {
 /*-------1440px-------*/
 
 
-@media ( 1024px <= width <= 1440px  ) {
+@media ( min-width: 1440px) {
     body {
-        height: 100dvh;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+    align-items: center;
     }
-    
+
     main {
         display: grid;
         grid-template-columns: repeat(4 , 1fr);
@@ -182,7 +187,8 @@ header {
         grid-template-areas: 
         "Clifford Clifford Walters Whittle"
         "Harmon    Abrams  Abrams  Whittle";
-        margin: 229px 165px 50px 165px;
+        width: 1114px;
+        height: 583px;
     }
 
     .Clifford {
